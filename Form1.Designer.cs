@@ -28,67 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.Start = new System.Windows.Forms.Button();
+            this.Stop = new System.Windows.Forms.Button();
+            this.adres = new System.Windows.Forms.TextBox();
+            this.my_port = new System.Windows.Forms.NumericUpDown();
+            this.info_o_polaczeniu = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.my_port)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // Start
             // 
-            this.button1.Location = new System.Drawing.Point(46, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Start.Location = new System.Drawing.Point(46, 224);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(75, 23);
+            this.Start.TabIndex = 0;
+            this.Start.Text = "Start";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // button2
+            // Stop
             // 
-            this.button2.Location = new System.Drawing.Point(183, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Stop.Location = new System.Drawing.Point(183, 224);
+            this.Stop.Name = "Stop";
+            this.Stop.Size = new System.Drawing.Size(75, 23);
+            this.Stop.TabIndex = 1;
+            this.Stop.Text = "Stop";
+            this.Stop.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // adres
             // 
-            this.textBox1.Location = new System.Drawing.Point(34, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.adres.Location = new System.Drawing.Point(34, 13);
+            this.adres.Name = "adres";
+            this.adres.Size = new System.Drawing.Size(100, 20);
+            this.adres.TabIndex = 2;
+            this.adres.Text = "adres";
             // 
-            // numericUpDown1
+            // my_port
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(152, 12);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 3;
+            this.my_port.Location = new System.Drawing.Point(152, 12);
+            this.my_port.Name = "my_port";
+            this.my_port.Size = new System.Drawing.Size(120, 20);
+            this.my_port.TabIndex = 3;
             // 
-            // listBox1
+            // info_o_polaczeniu
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(59, 63);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 4;
+            this.info_o_polaczeniu.FormattingEnabled = true;
+            this.info_o_polaczeniu.Location = new System.Drawing.Point(59, 63);
+            this.info_o_polaczeniu.Name = "info_o_polaczeniu";
+            this.info_o_polaczeniu.Size = new System.Drawing.Size(120, 95);
+            this.info_o_polaczeniu.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.info_o_polaczeniu);
+            this.Controls.Add(this.my_port);
+            this.Controls.Add(this.adres);
+            this.Controls.Add(this.Stop);
+            this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.my_port)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,11 +98,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button Start;
+        private System.Windows.Forms.Button Stop;
+        private System.Windows.Forms.TextBox adres;
+        private System.Windows.Forms.NumericUpDown my_port;
+        private System.Windows.Forms.ListBox info_o_polaczeniu;
     }
 }
 
