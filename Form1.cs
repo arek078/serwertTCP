@@ -55,5 +55,19 @@ namespace serwertTCP
                 MessageBox.Show(ex.ToString(), "Blad");
             }
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Start.Enabled = false;
+        }
+
+        private void Stop_Click(object sender, EventArgs e)
+        {
+            serwer.Stop();
+            klient.Close();
+            info_o_polaczeniu.Items.Add("zakonczono prace");
+
+            Start.Enabled = true;
+            Stop.Enabled = false;
+        }
     }
 }

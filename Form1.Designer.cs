@@ -54,6 +54,7 @@
             this.Stop.TabIndex = 1;
             this.Stop.Text = "Stop";
             this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // adres
             // 
